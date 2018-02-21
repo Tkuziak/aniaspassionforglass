@@ -1,0 +1,243 @@
+/****** BASE STYLES ******/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0 auto;
+    padding: 0; 
+}
+
+.addPadding {
+    padding-top: 260px;
+}
+#about, #work, #gallery, #find-me {
+    background-color: #d7d7cb;
+}
+
+#find-me {
+    height: 530px;
+}
+#work  {
+    height: 600px;
+}
+
+
+
+footer, 
+section {
+   overflow: auto;
+}
+
+/****** GRID ******/
+
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+.half-width {
+    width: 600px;
+    float: left;
+}
+.third-width {
+    width: 400px;
+    float: left;
+}
+
+/****** HEADER ******/
+
+header {
+    height: 270px;
+    background: black; /* For browsers that do not support gradients */
+    background: linear-gradient(black, #282828); /* Standard syntax (must be last) */
+    margin: 0;
+    top: 0;
+    z-index:10;
+}
+
+header h1 { 
+    width: 1000px;
+    font-size: 72px;
+    text-transform: lowercase;
+    color: #ffffff;
+    
+}
+
+header h2 {
+    margin-top: -40px;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #828282;
+    text-transform: capitalize;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    margin-left: 400px;
+}
+
+header span {
+    font-style: normal;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 0px;
+}
+
+
+/***** NAV *****/
+nav {
+    float: right; 
+    padding: 0px 40px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+    padding-left: 40px; 
+}
+
+
+
+
+
+/****** ABOUT and FIND-ME ******/
+
+#about .full-width, #find-me .full-width {
+    padding: 40px 0;
+}
+
+#about h2, #find-me h2 {
+    font-size: 36px;
+    color: #000000;
+    margin-top: -10px;
+}
+
+#find-me a {
+    padding-top: 20px;
+    font-size: 30px;
+    color: #828282;
+    margin-bottom: 0px; 
+    text-decoration: none;
+}
+
+#about p, #find-me p {
+    font-size: 21px;
+    color: #828282;
+    line-height: 32px;
+    padding-right: 50px;
+}
+
+#find-me p {
+    margin-top: 0px;
+}
+
+#about img {
+    border: 4px solid #222;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+
+/****** WORK ******/
+
+#work {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+#work h3 {
+    font-size: 24px;
+    color: white;
+    width: 190px;
+    margin: 0 auto;
+}
+
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #2b2b2b;
+    padding: 0 35px;
+}
+
+
+/****** GALLERY *****/
+#gallery {
+    padding-bottom: 50px;
+}
+
+/****** CONTACT ******/
+
+#contact-img{
+    border: 12px solid #ffffff;
+}
+
+#envelope {
+    padding: 10px 10px 0 115px;
+}
+#phone {
+    /*top right bottom left*/
+    padding: 0 10px 0 120px;
+}
+#contact h2 {
+   font-size: 28px;
+   color: #828282;
+}
+#contact a {
+    text-decoration: none;
+    color: #828282;
+    font-weight: bold;
+    font-size: 28px;
+}
+#contact ul {
+    list-style: none;
+}
+#contact ul li {
+     display: inline-block;
+}
+#contact ul img {
+    font-size: 32px;
+    padding-right: 48px;
+}
+
+#social-media {
+
+    height: 150px;
+
+}
+
+/***** FOOTER *****/
+
+footer {
+    height: 175px;
+    background: black; /* For browsers that do not support gradients */
+    background: linear-gradient(black, #282828); /* Standard syntax (must be last) */
+}
+
+footer h3 {
+    font-size: 14px;
+    padding: 0 10px 0 115px;
+    color: #828282;
+    text-transform: uppercase;
+}
+
