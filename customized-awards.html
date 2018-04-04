@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Ania's Passion for Glass | Customized Awards</title>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/gallery.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body id="myBody">
+        <header id="myHeader">
+            <div class="full-width">
+            	<div class="third-width">
+            	</div>
+                <div class="third-width">
+                    <a href="index.html"><h1>Ania's passion for glass</h1></a>
+                    <h2><span>Discover</span> "Beauty encapsulated in glass"</h2>
+                </div>
+                <div class="third-width">
+                  	<img src="img/header-necklace.png">  
+                </div> 
+                <div class="half-width">
+                </div>
+                <div class="half-width">
+                    <nav >
+                        <ul >
+                            <li ><a href="./index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">My Work</a>
+                                <div class="dropdown-content">
+                                    <a href="murals.html">School Murals</a>
+                                    <a href="customized-awards.html">Customized Awards</a>
+                                    <a href="gallery.html">Other Pieces</a>
+                                </div>
+                            </li>
+                            <li ><a href="about.html">About Me</a></li>
+                            <li><a href="find-me.html">Find Me</a></li>
+                        </ul>
+                    </nav>   
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="gallery">
+                <div class="full-width">
+                    <!--content for the stickey header-->
+                    <div class="content">
+                        <!--grid of images-->
+                        <div class="row"> 
+                          <div class="column">
+                            <img id="img01-t" class="gallery-images" src="img/awards/IDA-2015-1.jpg" alt="Immigrants of Distinction Awards 2015" style="width:100%" onclick="enlargePicture('img01-t')">
+                            <img id="img02" class="gallery-images" src="img/awards/IDA-2016-1.jpg" alt="Immigrants of Distinction Awards 2016" style="width:100%" onclick="enlargePicture('img02')">
+                            <img id="img05" class="gallery-images" src="img/awards/IDA-2017-3.jpg" alt="Immigrants of Distinction Awards 2017" style="width:100%" onclick="enlargePicture('img05')">
+                            <img id="img29" class="gallery-images" src="img/awards/IDA-2018-3.jpg" alt="Immigrants of Distinction Awards 2018" style="width:100%" onclick="enlargePicture('img29')">
+                            
+                            <img id="img33" class="gallery-images" src="img/awards/UofC-2015-3.jpg" alt="University of Calgary Schulich School of Engineering Service Recognition Awards 2015" style="width:100%" onclick="enlargePicture('img33')">
+                          </div>
+                          <div class="column">
+                            <img id="img18" class="gallery-images" src="img/awards/IDA-2015-2.jpg" alt="Immigrants of Distinction Awards 2015" style="width:100%" onclick="enlargePicture('img18')">
+                            <img id="img10" class="gallery-images" src="img/awards/IDA-2016-2.jpg" alt="Immigrants of Distinction Awards 2016" style="width:100%" onclick="enlargePicture('img10')">
+                            <img id="img06" class="gallery-images" src="img/awards/IDA-2017-4.jpg" alt="Immigrants of Distinction Awards 2017" style="width:100%" onclick="enlargePicture('img06')">
+                            <img id="img30" class="gallery-images" src="img/awards/IDA-2018-4.jpg" alt="Immigrants of Distinction Awards 2018" style="width:100%" onclick="enlargePicture('img30')">
+                            <img id="img34" class="gallery-images" src="img/awards/UofC-2015-4.jpg" alt="University of Calgary Schulich School of Engineering Service Recognition Awards 2015" style="width:100%" onclick="enlargePicture('img34')">
+                          </div> 
+                          <div class="column">
+                            <img id="img26" class="gallery-images" src="img/awards/IDA-2015-3.jpg" alt="Immigrants of Distinction Awards 2015" style="width:100%" onclick="enlargePicture('img26')">
+                            <img id="img19" class="gallery-images" src="img/awards/IDA-2017-1.jpg" alt="Immigrants of Distinction Awards 2017" style="width:100%" onclick="enlargePicture('img19')">
+                            <img id="img03" class="gallery-images" src="img/awards/IDA-2018-1.jpg" alt="Immigrants of Distinction Awards 2018" style="width:100%" onclick="enlargePicture('img03')">
+                            <img id="img31" class="gallery-images" src="img/awards/UofC-2015-1.jpg" alt="University of Calgary Schulich School of Engineering Service Recognition Awards 2015" style="width:100%" onclick="enlargePicture('img31')">
+                          </div>
+                          <div class="column">
+                            <img id="img04" class="gallery-images" src="img/awards/IDA-2015-4.jpg" alt="Immigrants of Distinction Awards 2015" style="width:100%" onclick="enlargePicture('img04')">
+                            <img id="img27" class="gallery-images" src="img/awards/IDA-2017-2.jpg" alt="Immigrants of Distinction Awards 2017" style="width:100%" onclick="enlargePicture('img27')">
+                            <img id="img28" class="gallery-images" src="img/awards/IDA-2018-2.jpg" alt="Immigrants of Distinction Awards 2018" style="width:100%" onclick="enlargePicture('img28')">
+                            <img id="img32" class="gallery-images" src="img/awards/UofC-2015-2.jpg" alt="University of Calgary Schulich School of Engineering Service Recognition Awards 2015" style="width:100%" onclick="enlargePicture('img32')">
+                          </div>
+                        </div>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                          <!-- The Close Button -->
+                          <span id="close" onclick="closeModal()">&times;</span>
+
+                          <!-- Modal Content (The Image) -->
+                          <img class="modal-content" id="img01">
+
+                          <!-- Modal Caption (Image Text) -->
+                          <div id="caption"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer id="contact">
+                <div class="full-width">
+                    <div class="half-width">
+                        <a href="mailto:info@aniaspassionforglass.com"><img src="img/social-media/icon-envelope.png" id="envelope" alt="envelope icon" />info@passionforglass.ca</a>
+                        <h2><img src="img/social-media/icon-phone.png" id="phone" alt="phone icon"/>403.390.8833</h2>
+                        <h3>Copyright (C) 2018 aniaspassionforglass.com. All rights reserved.</h3>
+                    </div>
+                    <div class="half-width" id="social-media">
+                        <ul>
+                            <li><a href="http://twitter.com/CalgaryFuse" target="_blank"><img src="img/social-media/icon-twitter.png"  alt="twitter icon"/></a></li>
+                            <li><a href="http://www.facebook.com/PassionForGlassCalgary/" target="_blank"><img src="img/social-media/icon-facebook.png" alt="facebook icon" /></a></li>
+                            <li><a href="http://instagram.com/passionforglass" target="_blank"><img src="img/social-media/icon-instagram.png" alt="instagram icon" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="js/gallery.js"></script>
+        <script src="js/sticky.js"></script>
+    </body>
+</html>
